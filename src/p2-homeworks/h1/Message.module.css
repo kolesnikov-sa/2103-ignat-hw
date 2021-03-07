@@ -1,5 +1,4 @@
 .message {
-    position: relative;
     padding: 7px 0;
     display: flex;
     flex-direction: row;
@@ -22,14 +21,15 @@
 }
 
 .message__content {
-    width: 360px;
-    padding: 13px 0;
+    position: relative;
+    width: 370px;
+    padding: 13px 0 13px 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    /*background: #062105;*/
-    background: linear-gradient(135deg, transparent 5px, #062105 0) top left, linear-gradient(225deg, transparent 5px, #062105 0);
+    background: #062105;
+    clip-path: polygon(8px 75px, 10px 65px, 10px 5px, 15px 0, calc(100% - 5px) 0, 100% 5px, 100% calc(100% - 5px), calc(100% - 5px) 100%, 0 100%);
 }
 
 .message__name {
@@ -44,7 +44,7 @@
 
 .message__time {
     position: absolute;
-    right: 70px;
+    right: 22px;
     bottom: 13px;
     color: #314c30;
 }
